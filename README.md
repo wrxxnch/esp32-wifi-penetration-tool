@@ -55,8 +55,11 @@ Example command (follow instructions in [esptool repo](https://github.com/espres
 ```
 esptool.py -p /dev/ttyS5 -b 115200 --after hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size detect 0x8000 build/partition_table/partition-table.bin 0x1000 build/bootloader/bootloader.bin 0x10000 build/esp32-wifi-penetration-tool.bin
 ```
+or in CMD
+C:\path\to\python.exe C:\path\to\esptool.py -p <your port example:COM6> -b 115200 --after hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size detect 0x8000 build/partition_table/partition-table.bin 0x1000 build/bootloader/bootloader.bin 0x10000 build/esp32-wifi-penetration-tool.bin
 
-On Windows you can use official [Flash Download Tool](https://www.espressif.com/en/support/download/other-tools).
+
+Or use ESPHome-Flasher [releases](https://github.com/esphome/esphome-flasher/releases)
 
 ## Documentation
 ### Wi-Fi attacks
