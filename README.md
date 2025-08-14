@@ -30,7 +30,7 @@ Obviously cracking is not part of this project, as ESP32 is not sufficient to cr
 1. Management AP is started automatically after boot
 1. Connect to this AP\
 By default: 
-*SSID:* `ManagementAP` and *password:* `mgmtadmin`
+<h3>*SSID:* `ManagementAP` and *password:* `mgmtadmin`</h3>
 1. In browser open `192.168.4.1` and you should see a web client to configure and control tool like this:
 
     ![Web client UI](doc/images/ui-config.png)
@@ -59,7 +59,7 @@ or in CMD
 C:\path\to\python.exe C:\path\to\esptool.py -p <your port example:COM6> -b 115200 --after hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size detect 0x8000 build/partition_table/partition-table.bin 0x1000 build/bootloader/bootloader.bin 0x10000 build/esp32-wifi-penetration-tool.bin
 
 
-Or use ESPHome-Flasher [releases](https://github.com/esphome/esphome-flasher/releases)
+<h1>Or use ESPHome-Flasher [releases](https://github.com/esphome/esphome-flasher/releases)</h1>
 
 ## Documentation
 ### Wi-Fi attacks
